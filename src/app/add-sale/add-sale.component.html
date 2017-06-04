@@ -1,0 +1,42 @@
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <!-- Modal -->
+  <div class="col-xs-4">
+    
+  <h2>Add Rep</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="form-group">
+      <label for="usr">Customer:</label>
+      <input name="customer" ngModel required #customer="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">kw Total:</label>
+      <input name="kwTotal" ngModel required #kwTotal="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Date Sold:</label>
+      <input name="saleDate" ngModel required #saleDate="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Date To Be Paid</label>
+      <input name="payDate" ngModel required #payDate="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Field Marketer Pay</label>
+      <input name="fieldMarketerPayAmount" ngModel required #fieldMarketerPayAmount="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Job Expense Amount:</label>
+      <input name="jobExpense" ngModel required #jobExpense="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Employee Id:</label>
+      <input name="employeeId" ngModel required #employeeId="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+
+    <button type="submit" class="btn btn-default">Login</button>
+  </form>
+
+  </div>
+  
+</div>

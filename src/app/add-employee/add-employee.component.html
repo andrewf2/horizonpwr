@@ -1,0 +1,46 @@
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <!-- Modal -->
+  <div class="col-xs-4">
+    
+  <h2>Add Rep</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="form-group">
+      <label for="usr">First Name:</label>
+      <input name="fName" ngModel required #fName="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Last Name:</label>
+      <input name="lName" ngModel required #lName="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Title:</label>
+      <input name="lName" ngModel required #lName="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">YTD earnings:</label>
+      <input name="startingYTD" ngModel required #startingYTD="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Employee ID:</label>
+      <input name="id" ngModel required #id="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Override Rate:</label>
+      <input name="overrideRate" ngModel required #overrideRate="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Advance Rate:</label>
+      <input name="advancedRate" ngModel required #overrideRate="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Earned Rate:</label>
+      <input name="earnedRate" ngModel required #earnedRate="ngModel" type="text" class="form-control" id="usr" required>
+    </div>
+
+    <button type="submit" class="btn btn-default">Login</button>
+  </form>
+
+  </div>
+  
+</div>

@@ -1,0 +1,27 @@
+<div *ngIf="employee">
+<div class="row" >
+    <div class="col-lg-12">
+        <h1 class="page-header">{{employee.fName}} {{employee.lName}}
+            <small>{{employee.title}}</small>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+
+            <div class="col-md-4">
+                <img class="img-responsive" src="../../../assets/{{employee.id}}.jpg" alt="">
+            </div>
+
+            <div class="col-md-4">
+            <h3>
+            	<b>Paid YTD:</b> ${{employee.startingYTD}}
+				
+            </h3>
+            <h3>
+            	<b>Pipeline (not paid):</b> $24,719.63
+            </h3>
+            </div>
+
+        </div>
+        </div>
