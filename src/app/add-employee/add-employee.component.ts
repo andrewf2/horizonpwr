@@ -5,8 +5,7 @@ import { EmployeesService } from '../models/employee.service';
 
 @Component({
   selector: 'add-employee',
-  templateUrl: './add-employee.component.html',
-  styleUrls: ['./add-employee.component.css']
+  templateUrl: './add-employee.component.html'
 })
 export class AddEmployeeComponent implements OnInit {
 
@@ -18,6 +17,7 @@ export class AddEmployeeComponent implements OnInit {
   onSubmit(f: NgForm) {
   	console.log(f.value);
   	this.employeeService.createEmployee(f.value);
+    this.employeeService.createUser(f.value);
   	//this.router.navigate(['/add',"employee"]);
 
   }

@@ -4,8 +4,7 @@ import 'rxjs';
 
 @Component({
   selector: 'app-add-form',
-  templateUrl: './add-form.component.html',
-  styleUrls: ['./add-form.component.css']
+  templateUrl: './add-form.component.html'
 })
 export class AddFormComponent implements OnInit {
   private resource: string;

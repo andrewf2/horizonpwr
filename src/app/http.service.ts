@@ -13,7 +13,7 @@ export class HTTPService {
 	private baseURL = "https://horizonpwr.firebaseio.com/"
 
 	get(url): Promise<any[]>{
-		return this.http.get(this.baseURL.concat(url))
+		return this.http.get(this.baseURL.concat(url).concat('.json'))
 			.toPromise()
 			.then(this.extractData)
 			.catch(this.handleError);

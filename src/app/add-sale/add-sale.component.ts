@@ -5,8 +5,7 @@ import { SalesService } from '../models/sales.service';
 
 @Component({
   selector: 'add-sale',
-  templateUrl: './add-sale.component.html',
-  styleUrls: ['./add-sale.component.css']
+  templateUrl: './add-sale.component.html'
 })
 
 export class AddSaleComponent implements OnInit {

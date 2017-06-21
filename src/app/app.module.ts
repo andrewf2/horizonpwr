@@ -18,6 +18,7 @@ import { EditSaleComponent } from './edit-sale/edit-sale.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { EditFormComponent } from './edit-form/edit-form.component';
 import { AddFormComponent } from './add-form/add-form.component';
+import { CommissionsComponent } from './commissions/commissions.component';
 
 
 
@@ -33,7 +34,8 @@ import { AddFormComponent } from './add-form/add-form.component';
     EditSaleComponent,
     EditEmployeeComponent,
     EditFormComponent,
-    AddFormComponent
+    AddFormComponent,
+    CommissionsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

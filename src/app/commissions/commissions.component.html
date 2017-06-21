@@ -1,0 +1,13 @@
+<div *ngFor="let sale of sales">
+    <div class="card col-xs-4" style= "background-color: #42c5f4;" style="box-shadow: 10px 10px 5px #888888;"
+    >
+        <div class="card-block">
+            <h3 class="card-title">{{sale.customer}}</h3>
+            <p class="card-text">Job Expenses: -{{getTotalExpenses(sale)}}</p>
+            <p class="card-text">Total kw: {{ sale.kwTotal }}</p>
+            <p class="card-text">Paid out on: {{sale.payDate}}</p>
+            <p class="card-text">Date sold: {{sale.saleDate}}</p>
+            <p class="card-text">Total Commssion: {{getTotalCommission(sale)}}</p>
+        </div>
+    </div>
+</div>

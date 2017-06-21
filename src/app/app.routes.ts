@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 
 export const appRoutes: Routes = [
   { path: '', component:  LoginComponent},
-  { path: 'employee/:id',      component: EmployeeSummaryComponent },
+  { path: 'commissions/:id',      component: EmployeeSummaryComponent },
   {
     path: 'edit/:resource',
     component: EditFormComponent,
